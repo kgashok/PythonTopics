@@ -174,8 +174,9 @@
 <div class="section" id="test-system-recommendations">
 <h3>Test system recommendations<a class="headerlink" href="#test-system-recommendations" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">pytest</span></code> has a bit of discussion of the issue here:</p>
-<p><a class="reference external" href="https://pytest.org/latest/goodpractises.html">https://pytest.org/latest/goodpractises.html</a></p>
-<p>I need to add links for <code class="docutils literal notranslate"><span class="pre">nose</span></code> and <code class="docutils literal notranslate"><span class="pre">unittest</span></code> … PR’s accepted!</p>
+<p><a class="reference external" href="https://docs.pytest.org/en/stable/goodpractices.html">https://docs.pytest.org/en/stable/goodpractices.html</a></p>
+<p>For <code class="docutils literal notranslate"><span class="pre">nose</span></code>, read <a class="reference external" href="https://nose.readthedocs.io/en/latest/finding_tests.html">https://nose.readthedocs.io/en/latest/finding_tests.html</a></p>
+<p>and for <code class="docutils literal notranslate"><span class="pre">unittest</span></code> read <a class="reference external" href="https://docs.python.org/3/library/unittest.html#test-discovery">https://docs.python.org/3/library/unittest.html#test-discovery</a> .</p>
 </div>
 <div class="section" id="two-options">
 <h3>Two Options<a class="headerlink" href="#two-options" title="Permalink to this headline">¶</a></h3>
@@ -201,7 +202,7 @@
 <p>That means that you do need a setup.py – though it can be very minimal. See:</p>
 <p><a class="reference external" href="https://packaging.python.org/en/latest/">https://packaging.python.org/en/latest/</a></p>
 <p>for recommendations.</p>
-<p>In the this case, the directory with all the tests shouls not be a python package – this is, it should not have a <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file.</p>
+<p>In the this case, the directory with all the tests should not be a python package – this is, it should not have a <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file.</p>
 <ol class="arabic" start="2">
 <li><p>The other options is to put your test code in a sub-package inside your package. In this case, it should be inside your package, and <em>be</em> a python package itself (i.e. have an <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_package</span>
