@@ -32,7 +32,7 @@ jobs:
     #    pytest
     - name: Build static site
       run: |
-        make html 
+        make -f Sources/Makefile html 
        
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
