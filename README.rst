@@ -4,7 +4,7 @@ PythonTopics
 
 Presentations/notes on various Python topics
 
-- included in the repo are assorted notes and presentations about selected Python topics.
+included in the repo are assorted notes and presentations about selected Python topics.
 
 A rendered version is available on gitHub pages at:
 
